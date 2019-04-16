@@ -1,0 +1,10 @@
+Prior to LabVIEW 7, some special installations were required to use the XY
+table under Windows XP.  The reason was that XP made control of some
+parallel port pins difficult.
+
+LabView 7 now has that built in, so no special installation is required.
+
+However, one does have to be careful about which registers are in use.
+LPT1 cannot be trusted to be at any particular register address, although
+the standard options still seem to hold.  So check the register assignment
+via tha device manager.
